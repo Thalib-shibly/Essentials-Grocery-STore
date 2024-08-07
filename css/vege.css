@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #74c541;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 180px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-container button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 0 25px 25px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Venue Section */
+.venues {
+    margin-bottom: 40px;
+}
+
+.venues h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.venue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.venue {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.venue h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.venue p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Product Section */
+#popular-product {
+    margin: 80px auto;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.product-box {
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the content */
+}
+
+.product-box img {
+    width: auto; /* Maintain aspect ratio */
+    height: 150px; /* Fixed height */
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.product-box strong {
+    color: #202020;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.product-box .quantity {
+    color: #949494;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.product-box .price {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #393939;
+}
+
+.product-box .cart-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #ecf7ee;
+    color: #4eb060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Pushes the button to the bottom */
+    transition: all ease 0.3s;
+}
+
+.product-box .cart-btn:hover {
+    background-color: #4eb060;
+    color: #ffffff;
+    transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    footer .container, nav ul {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .venue-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .search-container input[type="text"] {
+        width: 100%; /* Full width on small screens */
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .search-container {
+        width: 100%;
+    }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-size: 22px;
+    display: flex;
+    align-items: center; /* Aligns text with the logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #74c541;
+}

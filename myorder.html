@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="manifest" href="https://progressier.app/ru12bQeT619SrNAknRPR/progressier.json">
+        <script defer src="https://progressier.app/ru12bQeT619SrNAknRPR/script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Essentials - Order Page</title>
+        <link rel="stylesheet" href="css/vege.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/myabout.css">
+        <link rel="stylesheet" href="./css/myorder.css" type="text/css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/jpg" href="./images/mylogo.png">
+    </head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./images/mylogo.png" alt="Company Logo">
+            <h1><a href="index.html">Essentials</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./myabout.html">About Us</a></li>
+                <li><a href="./myproducts.html">Products</a></li>
+                <li><a href="./myorder.html">Order</a></li>
+                <li><a href="./myloyalty.html">Loyalty Registration</a></li>
+            </ul>
+        </nav> 
+        
+    </header>
+
+    
+    <main>
+        <form id="orderForm">
+            <div class="category" id="fruits">
+                <h2>Fruits</h2>
+                <!-- Add fruits -->
+                <label>
+                    <img src="./images/redapple.jpg" alt="RedApples">
+                     Red Apples (1kg = Rs 1500) <input type="number" min="0" step="0.1" data-category="fruit" data-price="1500"></label>
+                <label>
+                    <img src="./images/banana.jpg" alt="Bananas">
+                     Bananas - Ambun (1kg = Rs 750) <input type="number" min="0" step="0.1" data-category="fruit" data-price="750"></label>
+                <label>
+                    <img src="./images/mangosteen.jpg" alt="Mangosteen">
+                     Mangosteen (1kg = Rs 2000) <input type="number" min="0" step="0.1" data-category="fruit" data-price="2000"></label>
+                <label>
+                    <img src="./images/mango.jpg" alt="Mangoes">
+                     Mangoes (1kg = Rs 800) <input type="number" min="0" step="0.1" data-category="fruit" data-price="800"></label>
+                <label>
+                    <img src="./images/Guava.jpg" alt="Guava">
+                     Guava (1kg = Rs 750) <input type="number" min="0" step="0.1" data-category="fruit" data-price="750"></label>
+                <label>
+                    <img src="./images/Avocado.jpg" alt="Avocado">
+                     Avocado (1kg = Rs 1200) <input type="number" min="0" step="0.1" data-category="fruit" data-price="1200"></label>
+            </div>
+
+            <div class="category" id="vegetables">
+                <h2>Vegetables</h2>
+                <!-- Add vegetables -->
+                <label>
+                    <img src="./images/birinjal.jpg" alt="Birinjal">
+                     Birinjal (1kg = Rs 800)<input type="number" min="0" step="0.1" data-category="vegetable" data-price="800"></label>
+                <label>
+                    <img src="./images/chili.png" alt="Chilli">
+                    Chilli (1kg = Rs 1200) <input type="number" min="0" step="0.1" data-category="vegetable" data-price="1200"></label>
+                <label>
+                    <img src="./images/onion.png" alt="Onion">
+                    Onion (1kg = Rs 1000) <input type="number" min="0" step="0.1" data-category="vegetable" data-price="1000"></label>
+                <label>
+                    <img src="./images/patato.png" alt="Potatoes">
+                     Potatoes (1kg = Rs 900)<input type="number" min="0" step="0.1" data-category="vegetable" data-price="900"></label>
+                <label>
+                    <img src="./images/Cabbage.jpg" alt="Cabbage">
+                     Cabbage (1kg = Rs 700) <input type="number" min="0" step="0.1" data-category="vegetable" data-price="700"></label>
+                <label>
+                    <img src="./images/tamato.png" alt="Tomato">
+                     Tomato (1kg = Rs 1100) <input type="number" min="0" step="0.1" data-category="vegetable" data-price="1100"></label>
+            </div>
+
+            <div class="category" id="dairy">
+                <h2>Dairy Products</h2>
+                <!-- Add dairy products -->
+                <label>
+                    <img src="./images/anchor.jpg" alt="Anchor Milk Powde">
+                     Anchor Milk Powder (1 packet = Rs 1200) <input type="number" min="0" data-category="dairy" data-price="1200"></label>
+                <label>
+                    <img src="./images/anchorpediapro.jpg" alt="Anchor Pedia Pro">
+                    Anchor Pedia Pro (1 packet = Rs 2000) <input type="number" min="0" data-category="dairy" data-price="2000"></label>
+                <label>
+                    <img src="./images/ambewalamilk.jpg" alt="Ambewala milk">
+                     Ambewala milk (1 packet = Rs 1300) <input type="number" min="0" data-category="dairy" data-price="1300"></label>
+                <label>
+                    <img src="./images/curd.jpg" alt="Curd">
+                     Curd (1 container = Rs 1000) <input type="number" min="0" data-category="dairy" data-price="1000"></label>
+                <label>
+                    <img src="./images/teneggs.jpg" alt="Eggs">
+                     Eggs (1 Egg = Rs 50) <input type="number" min="0" data-category="dairy" data-price="50"></label>
+                <label>
+                    <img src="./images/slicebread.jpg" alt="Slice Bread">
+                     Slice Bread (1 slice = Rs 250) <input type="number" min="0" data-category="dairy" data-price="250"></label>
+            </div>
+
+            <div class="category" id="meatandseafood">
+                <h2>Meat and Seafood</h2>
+                <!-- Add meat and seafood items -->
+                <label>
+                    <img src="./images/Beefcube.jpg" alt="Beef">
+                    Beef Cubes (1kg = Rs 2500) <input type="number" min="0" step="0.1" data-category="meatandseafood" data-price="2500"></label>
+                <label>
+                    <img src="./images/chickenlegs.jpg" alt="Chicken Legs">
+                    Chicken Legs (1kg = Rs 1750) <input type="number" min="0" step="0.1" data-category="meatandseafood" data-price="1750"></label>
+                <label>
+                    <img src="./images/chickenbreast.jpg" alt="Chicken Breast">
+                    Chicken Breast (1kg = Rs 3000) <input type="number" min="0" step="0.1" data-category="meatandseafood" data-price="3000"></label>
+                <label>
+                    <img src="./images/Muttonboneless.jpg" alt="Mutton">
+                    Mutton Boneless (1kg = Rs 3000) <input type="number" min="0" step="0.1" data-category="meatandseafood" data-price="3000"></label>
+                <label>
+                    <img src="./images/dryfishsprats.jpg" alt="Dry Fish Sprats">
+                    Dry Fish Sprats (1 packet = Rs 600) <input type="number" min="0" step="1" data-category="meatandseafood" data-price="600"></label>
+                <label>
+                    <img src="./images/prawns.jpg" alt="Prawns">
+                    Prawns (1kg = Rs 1800) <input type="number" min="0" step="0.1" data-category="meatandseafood" data-price="1800"></label>
+            </div>
+
+            <div class="category" id="baking&cookingingredients">
+                <h2>Baking & Cooking Ingredients</h2>
+                <!-- Add baking and cooking ingredients -->
+                <label>
+                    <img src="./images/Brownsugar.jpg" alt="Brown Sugar">
+                    Brown Sugar (1kg = Rs 200) <input type="number" min="0" step="0.1" data-category="baking&cookingingredients" data-price="200"></label>
+                <label>
+                    <img src="./images/salt.jpg" alt="Salt">
+                    Salt 500g (1 packet = Rs 150) <input type="number" min="0" step="1" data-category="baking&cookingingredients" data-price="150"></label>
+                <label>
+                    <img src="./images/bakingpowder.jpg" alt="Salt">
+                    Baking Powder 50g (1 container = Rs 600)  <input type="number" min="0" step="1" data-category="baking&cookingingredients" data-price="600"></label>
+                <label>
+                    <img src="./images/jellyblackcurrent.jpg" alt="Jelly">
+                    Jelly Black Current (1 packet = Rs 250) <input type="number" min="0" data-category="baking&cookingingredients" data-price="250"></label>
+                <label>
+                    <img src="./images/jellysraberry.jpg" alt="Jelly">
+                    Jelly Strawberry (1 packet = Rs 250)  <input type="number" min="0" step="1" data-category="baking&cookingingredients" data-price="250"></label>
+                <label>
+                    <img src="./images/yeast.jpg" alt="Yeast">
+                    Yeast (1 packet = Rs 300) <input type="number" min="0" data-category="baking&cookingingredients" data-price="300"></label>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="addToFavourites">Add to Favourites</button>
+                <button type="button" id="applyFavourites">Apply Favourites</button>
+                <a href="./checkout.html" id="buyNow" class="button-link">Buy Now</a>
+            </div>
+        </form>
+
+        <section class="order-summary">
+            <h2>Current Order</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be added here dynamically -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="totalPrice">Rs 0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+ 
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2><span>Essentials</span></h2>
+                <p>Your one-stop shop for all your grocery needs. Fresh, high-quality products delivered to your door.</p>
+                <div class="social-icons">
+
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Category</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./myabout.html">About Us</a></li>
+                    <li><a href="./myproducts.html">Products</a></li>
+                    <li><a href="./myorder.html">Order</a></li>
+                    <li><a href="./myloyalty.html">Loyalty Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p> +94 81 222 1122</p>
+                <p>essentials.grocery@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Essentials | Designed by Thalib Shibly</p>
+        </div>
+    </footer>
+
+    <script src="./javascript/order.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="manifest" href="https://progressier.app/ru12bQeT619SrNAknRPR/progressier.json">
+        <script defer src="https://progressier.app/ru12bQeT619SrNAknRPR/script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Essentials - Checkout Page</title>
+        <link rel="stylesheet" href="./css/myorder.css" type="text/css">
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <link rel="stylesheet" href="./css/myabout.css" type="text/css">
+        <link rel="stylesheet" href="./css/checkout.css" type="text/css">
+        <link rel="icon" type="image/jpg" href="./images/mylogo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/mylogo.png" alt="Company Logo" class="logo">
+            <h1><a href="index.html">Essentials</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./myabout.html">About Us</a></li>
+                <li><a href="./myproducts.html">Products</a></li>
+                <li><a href="./myorder.html">Order</a></li>
+                <li><a href="./myloyalty.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <h2>Your Order</h2>
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be added here dynamically -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="summaryTotalPrice">Rs0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+    
+            <h2>Personal Details</h2>
+            <label>Name: <input type="text" id="name" required></label><br>
+            <label>Email: <input type="email" id="email" required></label><br>
+    
+            <h2>Delivery Details</h2>
+            <label>Address: <input type="text" id="address" required></label><br>
+            <label>City: <input type="text" id="city" required></label><br>
+            <label>Zip Code: <input type="text" id="zip" required></label><br>
+    
+            <h2>Payment Information</h2>
+            <label>
+                <input type="radio" name="paymentMethod" value="online" required>
+                Online Payment
+            </label><br>
+            <label>
+                <input type="radio" name="paymentMethod" value="cod" required>
+                Cash on Delivery
+            </label><br>
+    
+            <div id="onlinePaymentFields" style="display: none;">
+                <label>Card Number: <input type="text" id="card" pattern="\d{16}" placeholder="Please enter the 16 digits on your card"></label><br>
+                <label>Expiry Date: <input type="text" id="expiry" pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM / YY"></label><br>
+                <label>CVV: <input type="text" id="cvv" pattern="\d{3}" placeholder="Please enter the 3 digits on your card"></label><br>
+    
+                <!-- Payment Method Icons -->
+                <fieldset class="payment-methods">
+                    <legend>We Accept</legend>
+                    <img src="./images/visa.jpg" alt="Visa">
+                    <img src="./images/mastercard.jpg" alt="MasterCard">
+                    <img src="./images/paypal.jpg" alt="PayPal">
+                    <img src="./images/americanexpress.jpg" alt="American Express">
+                </fieldset>
+            </div>
+    
+            <br>
+            <button type="submit" id="payButton">Pay</button>
+        </form>
+    </section>
+    <br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2><span>Essentials</span></h2>
+                <p>Your one-stop shop for all your grocery needs. Fresh, high-quality products delivered to your door.</p>
+                <div class="social-icons">
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Category</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./myabout.html">About Us</a></li>
+                    <li><a href="./myproducts.html">Products</a></li>
+                    <li><a href="./myorder.html">Order</a></li>
+                    <li><a href="./myloyalty.html">Loyalty Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>+94 81 222 1122</p>
+                <p> essentials.grocery@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Essentials | Designed by Thalib Shibly</p>
+        </div>
+    </footer>
+    <script src="./javascript/checkout.js"></script>
+</body>
+</html>

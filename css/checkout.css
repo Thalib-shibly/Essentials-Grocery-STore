@@ -1,0 +1,331 @@
+/* General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../images/bluebg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #74c541;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 180px;
+    box-sizing: border-box;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-container button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 0 25px 25px 0;
+}
+
+.search-container button:hover {
+    opacity: 0.8;
+}
+
+main {
+    padding: 20px;
+    background-color: #f8f8f8;
+    flex: 1;
+}
+
+/*..............styling the body.............*/
+      
+.checkout {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgb(204, 240, 208);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--colour);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid var(--colour);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #74c541;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 150, 0, 0.2);
+}
+
+button {
+  background-color: #74c541;
+  color: #fff;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #65a737;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  color: #000000;
+  background-color: var(--colour);
+  font-weight: bold;
+}
+
+tfoot td {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#summaryTotalPrice {
+  color: var(--colour);
+}
+
+
+.payment-methods {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 10px;
+border-radius: 5px;
+border-color: white;
+}
+
+.payment-methods img {
+height: auto;
+width: 70px;
+}
+
+#text{
+text-align: center;
+}
+    
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+  
+    header {
+        flex-direction: column;
+    }
+  
+    header .logo-container h1 {
+        font-size: 1.2em;
+    }
+  
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    body {
+        font-size: 14px;
+    }
+  
+    header {
+        flex-direction: column;
+    }
+  
+    header .logo-container h1 {
+        font-size: 1.2em;
+    }
+  
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    header .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+  
+  
+  
+    .checkout {
+        width: 90%;
+        margin: 20px auto;
+    }
+  
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+  
+    h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+  
+    input[type="text"],
+    input[type="email"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+  
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+  
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+  
+    table th,
+    table td {
+        padding: 8px;
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+  
+    .payment-methods {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+  
+    .payment-methods img {
+        width: 50px;
+    }
+  
+    main {
+        padding: 10px;
+    }
+  
+    footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    footer .footer-section {
+        margin-bottom: 20px;
+    }
+  
+    .footer-bottom {
+        text-align: center;
+    }
+  }
+  
+

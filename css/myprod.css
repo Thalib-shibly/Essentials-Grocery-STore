@@ -1,0 +1,85 @@
+
+
+.body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+/* Container styling */
+.container{
+    max-width: 1150px;
+}
+
+.product-section {
+    text-align: center;
+}
+
+.product-section h2 {
+
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-box {
+    text-align: center;
+    width: 30%;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+}
+
+.category-box img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.category-box h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 0;
+    color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+
+    .product-categories {
+        flex-direction: column;
+    }
+
+    .category-box {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+}
+

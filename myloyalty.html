@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="manifest" href="https://progressier.app/ru12bQeT619SrNAknRPR/progressier.json"/>
+        <script defer src="https://progressier.app/ru12bQeT619SrNAknRPR/script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Essentials - Loyalty</title>
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="./css/myabout.css" type="text/css">
+        <link rel="stylesheet" href="./css/myloyalty.css" type="text/css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="./images/mylogo.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="./images/mylogo.png" alt="Company Logo">
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">Essentials</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./myabout.html">About Us</a></li>
+                <li><a href="./myproducts.html">Products</a></li>
+                <li><a href="./myorder.html">Order</a></li>
+                <li><a href="./myloyalty.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="button" class="search-button"><i class='bx bx-search'></i></button>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Loyalty Program Registration</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="loyalty-scheme">Select Loyalty Scheme:</label>
+                <select id="loyalty-scheme" name="loyalty-scheme" required>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+    <div class="benefits-container">
+        <h3>Loyalty Program Benefits</h3>
+        <ul>
+            <li><strong>Silver:</strong> 5% off on all purchases.</li>
+            <li><strong>Gold:</strong> 10% off, free delivery, and early access to promotions.</li>
+            <li><strong>Platinum:</strong> 20% off, free delivery, early access to promotions, and exclusive member events.</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2><span>Essentials</span></h2>
+                <p>Your one-stop shop for all your grocery needs. Fresh, high-quality products delivered to your door.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Category</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./myabout.html">About Us</a></li>
+                    <li><a href="./myproducts.html">Products</a></li>
+                    <li><a href="./myorder.html">Order</a></li>
+                    <li><a href="./myloyalty.html">Loyalty Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +94 81 222 1122</p>
+                <p><i class="fas fa-envelope"></i> essentials.grocery@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Essentials | Designed by Thalib Shibly</p>
+        </div>
+    </footer>
+</body>
+</html>
